@@ -40,23 +40,6 @@ export default class Login extends React.Component {
 
     goToRegister = () => this.props.history.push("/Register")
 
-    //EXTRA CODE
-    // onFBLogout=()=>{
-    //     this.FB.logout(function(response) {
-    //         // Person is now logged out
-    //         console.log(response)
-    //      });
-    //   }
-    //grabs fbemail from FB
-    // var fbEmail = ""
-    // this.FB.api(`/${resultObject.user.id}`, {fields: 'email'}, (response)=> {
-    //     fbEmail = response.email
-    //     this.loginSetStateForFbEmail(fbEmail)
-    //   });
-    // onSignIn = googleUser=>{
-    //     var profile = googleUser.getBasicProfile();
-    //     console.log('Need: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-    //   }
 
     render() {
         return (
