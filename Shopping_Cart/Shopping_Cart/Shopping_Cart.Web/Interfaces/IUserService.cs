@@ -8,7 +8,6 @@ namespace Shopping_Cart.Web.Interfaces
 {
     public interface IUserService
     {
-         int Register(UserRequest userRequest);
-        bool Login(LoginRequest loginRequest);
+         string Register(UserRequest userRequest);
     }
 }
