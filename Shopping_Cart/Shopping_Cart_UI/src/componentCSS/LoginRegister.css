@@ -1,12 +1,23 @@
+/*-------Login Page CSS--------*/
 .LoginHeader{
-text-align: center
-}
-.LoginTable{
-    width: 20%;
-}
-.LoginContainer{
-    padding-top: 300px
-}
-.RegisterContainer{
-    padding-top: 250px
-}
+    text-align: center;
+    background-color: white;
+    color: deepskyblue
+    }
+    .LoginTable{
+        width: 35%;
+        background-color: white;
+    
+    }
+    .LoginContainer{
+        padding-top: 300px;
+        padding-bottom: 15%;
+        background-color: deepskyblue
+    }
+    
+    /*-------Register Page CSS--------*/
+    .RegisterContainer{
+        padding-top: 250px;
+        padding-bottom: 15%;
+        background-color: deepskyblue
+    }
