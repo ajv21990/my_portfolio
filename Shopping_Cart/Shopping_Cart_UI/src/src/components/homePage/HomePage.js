@@ -1,8 +1,10 @@
 import React from 'react'
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap'
 import '../../componentCSS/HomePage.css'
+import {connect} from 'react-redux'
+import {logoutUser} from '../../actions/UserActions'
 
-export default class Home extends React.Component{
+ class Home extends React.Component{
     constructor(props){
         super(props)
         this.state = {
@@ -17,6 +19,11 @@ export default class Home extends React.Component{
     }
     modalToggle = () =>{
         this.setState({modalOpen: !this.state.modalOpen})
+    }
+
+    logout = () => {
+        this.props.logout()
+        console.log("logout")
     }
 
     Basic = () => console.log("Action")
@@ -37,6 +44,8 @@ export default class Home extends React.Component{
                     <DropdownItem onClick={this.modalToggle}>Basic Info</DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem onClick={this.ChangePass}>Change Password</DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem className="logout" onClick={this.logout}>Logout</DropdownItem>
                 </DropdownMenu>
                 </Dropdown>                     
                 </div>
@@ -63,3 +72,19 @@ export default class Home extends React.Component{
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        user: state.UserReducer
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        logout: () => {
+            dispatch(logoutUser());
+        }
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

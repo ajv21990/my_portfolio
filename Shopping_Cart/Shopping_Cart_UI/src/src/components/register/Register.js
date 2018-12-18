@@ -43,7 +43,7 @@ export default class Register extends React.Component{
                 <TextInput label="Last Name" id="LName" type="text" val={this.state.LName} handleChange={this.handleChange}/>
                 <TextInput label="Email" id="Email" type="email" val={this.state.email} handleChange={this.handleChange}/>
                 <TextInput label="Password" id="Password" type="password" val={this.state.Password} handleChange={this.handleChange}/>
-                <TextInput label="Confirm Password" id="ConfirmPassword" type="password" val={this.state.ConfirmPassword} handleChange={this.handleChange}/>
+                <TextInput label="Confirm Password" id="ConfirmPassword" type="password" val={this.state.ConfirmPassword} handleChange={this.handleChange}/>                
                 <button className="btn btn-primary mt-2 mb-2" onClick={this.register}>Register</button>
                 </div>
             </div>
