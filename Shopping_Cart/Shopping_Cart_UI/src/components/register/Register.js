@@ -1,6 +1,7 @@
 import React from 'react'
 import TextInput from '../common/TextInput'
 import '../../componentCSS/LoginRegister.css'
+import RegisterApi from '../../api/RegisterApi';
 
 export default class Register extends React.Component{
     constructor(props){
@@ -21,6 +22,15 @@ export default class Register extends React.Component{
             [key]:val
         })
     }
+    register = () => (this.state.Email === "" || this.state.Password === ""||this.state.ConfirmPassword === "" ||this.state.FName === "" ||this.state.LName === "")? alert("Must fill in all fields") 
+    :RegisterApi.Register(this.state,this.onSuccess,this.onError)
+
+    onSuccess = resp => console.log(resp)
+    // Go to homepage
+
+    onError = error=>console.log(error)
+
+
 
     render(){
         return(
@@ -33,8 +43,8 @@ export default class Register extends React.Component{
                 <TextInput label="Last Name" id="LName" type="text" val={this.state.LName} handleChange={this.handleChange}/>
                 <TextInput label="Email" id="Email" type="email" val={this.state.email} handleChange={this.handleChange}/>
                 <TextInput label="Password" id="Password" type="password" val={this.state.Password} handleChange={this.handleChange}/>
-                <TextInput label="Confirm Password" id="ConfirmPassword" type="password" val={this.state.ConfirmPassword} handleChange={this.handleChange}/>
-                <button className="btn btn-primary mt-2 mb-2">Log-In</button>
+                <TextInput label="Confirm Password" id="ConfirmPassword" type="password" val={this.state.ConfirmPassword} handleChange={this.handleChange}/>                
+                <button className="btn btn-primary mt-2 mb-2" onClick={this.register}>Register</button>
                 </div>
             </div>
             </div>
