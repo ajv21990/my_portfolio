@@ -20,3 +20,7 @@ and user notifying both of the job interest.
 One of my tasks was making a [login page](https://drive.google.com/file/d/1uSITfWL0T3ZrNWr_-ghq9LioISuP06Bq/view?usp=sharing).
 The login grabs the email and password input and grabs the user record from the database using this email.
 I also decided to include third party OAuth to sign in to the website with a users Facebook or Google account.
+## Shopping Kart
+Current working on a side project where I'm making a "ebay" style shopping cart. The main focus of this project is to learn to implememnt Redux.
+## Smash Bros Info
+A personal project that I'm working on where I'm practicing my CSS skills.
