@@ -1,0 +1,32 @@
+.bG{
+    background-image: url("../mario/Mario_BioBG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(207, 1, 1)
+
+}
+
+.DKBG{
+    background-image: url("../dk/DK_BioBG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: burlywood;
+}
+
+.LinkBG{
+    background-image: url("../link/Link_BioBG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:  rgb(4, 4, 175)
+}
+
+.SamusBG{
+    background-image: url("../samus/Samus_BG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:  yellow
+}
