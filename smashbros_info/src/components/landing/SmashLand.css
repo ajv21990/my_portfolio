@@ -1,0 +1,42 @@
+.SmashLand {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 2px black;
+  background-image: url("../../images/Battlefield_BG.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.logo{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 50px;
+  width:50%;
+}
+.button{
+  background-image: linear-gradient(to right, royalblue, white);
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 3px black inset;
+}
+.button:hover{
+  cursor: pointer;
+ 
+  box-shadow: 2px 3px 3px black
+
+
+}
+.icon{
+  width: 25px;
+  height: auto;
+  padding-bottom: 5px;
+  padding-right: 3px;
+}
+
+ .landBtn{
+  margin-bottom: 25%
+
+}

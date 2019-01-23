@@ -1,0 +1,100 @@
+/* Character Select Page */
+
+.CharacterSelect{
+    cursor: pointer;
+    padding: 20px;
+    height: 135px;
+    width: auto
+}
+.CharacterSelect:hover{
+    box-shadow: 10px 10px 25px black inset
+}
+
+.characterSelectBackground{
+    background-image: linear-gradient(to bottom right, blue, rgb(51, 90, 206), rgb(236, 236, 93), yellow);
+    padding-bottom: 100%;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px black;
+    cursor: default;
+
+}
+.FirstRow{
+width: 100%;
+height: auto;
+
+}
+
+
+/* DropDown */
+.navbarDropdown{
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.dropBtn{
+    background-color: rgb(236, 236, 93);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+
+.dropContent{
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+}
+.dropContent a{
+    color: black;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+
+}
+.navbarDropdown:hover .dropBtn{
+    background-color: rgba(236, 236, 93, 0.698);
+}
+
+
+.dropContent a:hover {background-color: royalblue}
+.navbarDropdown:hover .dropContent{
+    display: block;
+}
+
+
+
+/* Character Specific Page */
+
+.move{
+    font-weight: bold;
+
+}
+.CharacterImage{
+    width: 15%;
+    height: auto
+}
+.CharacterFS{
+    width: 25%;
+    height:25%;
+    border-radius: 15px;
+    margin-left: 2px;
+
+}
+
+p{
+  background:  rgba(126, 122, 122, 0.5);
+  -moz-box-shadow: 0 0 0 10px rgba(126, 122, 122, 0.5);
+  -webkit-box-shadow: 0 0 0 10px rgba(126, 122, 122, 0.5);
+  box-shadow: 0 0 0 10px rgba(126, 122, 122, 0.5);
+}
+
+
