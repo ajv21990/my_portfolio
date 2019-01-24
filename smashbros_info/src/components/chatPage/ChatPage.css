@@ -1,0 +1,12 @@
+.middleChatBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.middleChatBox p{
+    border: 2px solid black;
+}
+
+.fullchatBox{
+    margin-left: 20px;
+}
