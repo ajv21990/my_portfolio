@@ -1,0 +1,22 @@
+import React from 'react'
+
+export default class Chat extends React.Component{
+    render(){
+return(
+    <div>
+        <div className="topChatBox">
+            <h1>Chat</h1>
+        </div>
+        <div className="middleChatBox">
+            <p className="chatArea">Chat area</p>
+            <p>List of Users</p>
+        </div>
+        <div className="bottomChatBox">
+            <input type="text" />
+            <button type="submit">Send</button>
+        </div>
+    </div>
+)
+    }
+    
+}
