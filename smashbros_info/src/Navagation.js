@@ -6,7 +6,7 @@ import Mario from '../src/components/characterBios/Mario'
 import DK from '../src/components/characterBios/DK'
 import Link from '../src/components/characterBios/Link'
 import Samus from '../src/components/characterBios/Samus'
-import chat from '../src/components/chatPage/chat'
+import Chat from '../src/components/chatPage/ChatApp'
 
 export default class Navagation extends React.Component {
     render() {
@@ -19,7 +19,7 @@ export default class Navagation extends React.Component {
                     <Route exact path='/dk' component={DK} />
                     <Route exact path='/link' component={Link} />
                     <Route exact path='/samus' component={Samus} />
-                    <Route exact path='/chat' component={chat} />
+                    <Route exact path='/chat' component={Chat} />
 
                 </div>
             </Router>

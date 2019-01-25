@@ -4,7 +4,8 @@
     cursor: pointer;
     padding: 20px;
     height: 135px;
-    width: auto
+    width: auto;
+    align-self: center
 }
 .CharacterSelect:hover{
     box-shadow: 10px 10px 25px black inset
@@ -23,8 +24,8 @@
 
 }
 .FirstRow{
-width: 100%;
-height: auto;
+display: flex;
+flex-direction: row
 
 }
 
