@@ -5,6 +5,7 @@ import NewRoomForm from './NewRoomForm'
 import RoomList from './RoomList'
 import SendMessageForm from './SendMessageForm';
 import {tokenUrl,instanceLocator} from '../../config'
+import '../chatPage/ChatPage.css'
 
 export default class ChatApp extends React.Component{
     constructor(){
@@ -75,9 +76,9 @@ export default class ChatApp extends React.Component{
     }
 
     createRoom = roomName => {
-        console.log("roomName =", roomName)
+        console.log(this.currentUser)
         this.currentUser.createRoom({
-            roomName: roomName
+            name: roomName
         })
         .then(room => this.subscribeToRoom(room.id))
         .catch(err => console.log('error with create room',err))
@@ -86,13 +87,23 @@ export default class ChatApp extends React.Component{
 render(){
     return(
         <div className="ChatApp">
+        
             <RoomList
             roomId ={this.state.roomId}
             subscribeToRoom={this.subscribeToRoom}
             rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
-            <MessageList messages={this.state.messages}/>
-            <SendMessageForm  sendMessage={this.sendMessage}/>
-            <NewRoomForm createRoom = {this.createRoom} />
+
+            <MessageList
+            roomId ={this.state.roomId} 
+            messages={this.state.messages}/>
+
+            <SendMessageForm  
+            disabled={!this.state.roomId}
+            sendMessage={this.sendMessage}/>
+
+            <NewRoomForm 
+            createRoom = {this.createRoom} />
+
         </div>
     )
 }

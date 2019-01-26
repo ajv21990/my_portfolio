@@ -1,4 +1,6 @@
 import React from 'react'
+import '../chatPage/ChatPage.css'
+
 
 export default class SendMessageForm extends React.Component{
     constructor(){
@@ -25,6 +27,7 @@ render(){
         onSubmit={this.handleSubmit}
         className="send-message-form">
             <input
+            disabled={this.props.disabled}
             onChange={this.handleChange}
             value={this.state.message}
             placeholder="Type and hit enter"

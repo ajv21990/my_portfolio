@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import Message from './Message'
+import '../chatPage/ChatPage.css'
+
 
 export default class MessageList extends React.Component {
     componentDidUpdate = () => {
@@ -17,6 +19,15 @@ export default class MessageList extends React.Component {
     }
 
     render(){
+        if(!this.props.roomId){
+            return(
+                <div className="message-list">
+                    <div className="join-room">
+                        &larr;Join A Room!
+                    </div>
+                </div>
+            )
+        }
         return(
     <div className="message-list">
     {this.props.messages.map((message, index) => {

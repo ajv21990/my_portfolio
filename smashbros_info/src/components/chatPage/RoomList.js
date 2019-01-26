@@ -1,4 +1,6 @@
 import React from 'react'
+import '../chatPage/ChatPage.css'
+
 
 export default class RoomList extends React.Component{
 render(){

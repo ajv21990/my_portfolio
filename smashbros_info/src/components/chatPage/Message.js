@@ -1,4 +1,6 @@
 import React from 'react'
+import '../chatPage/ChatPage.css'
+
 
 const Message = props =>{
     return(
