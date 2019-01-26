@@ -1,0 +1,22 @@
+/* Rooms List */
+.rooms-list{
+    background-color: purple;
+    color: white;
+}
+.rooms-list a{
+    color: white;
+}
+
+.bottom-chat{
+    display: flex;
+flex-direction: row
+}
+
+.top-chat{
+    display: flex;
+flex-direction: row
+}
+.join-room{
+    color: blue;
+  
+}

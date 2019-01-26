@@ -87,22 +87,30 @@ export default class ChatApp extends React.Component{
 render(){
     return(
         <div className="ChatApp">
-        
-            <RoomList
+
+        <div className="top-chat">
+        <RoomList
             roomId ={this.state.roomId}
             subscribeToRoom={this.subscribeToRoom}
             rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
 
-            <MessageList
+        <MessageList
             roomId ={this.state.roomId} 
             messages={this.state.messages}/>
+        </div>
+
+
+
+        <div className="bottom-chat">
+
+            <NewRoomForm 
+            createRoom = {this.createRoom} />
 
             <SendMessageForm  
             disabled={!this.state.roomId}
             sendMessage={this.sendMessage}/>
+        </div>
 
-            <NewRoomForm 
-            createRoom = {this.createRoom} />
 
         </div>
     )
