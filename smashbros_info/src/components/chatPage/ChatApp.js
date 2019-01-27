@@ -88,7 +88,6 @@ render(){
     return(
         <div className="ChatApp">
 
-        <div className="top-chat">
         <RoomList
             roomId ={this.state.roomId}
             subscribeToRoom={this.subscribeToRoom}
@@ -97,11 +96,6 @@ render(){
         <MessageList
             roomId ={this.state.roomId} 
             messages={this.state.messages}/>
-        </div>
-
-
-
-        <div className="bottom-chat">
 
             <NewRoomForm 
             createRoom = {this.createRoom} />
@@ -109,7 +103,6 @@ render(){
             <SendMessageForm  
             disabled={!this.state.roomId}
             sendMessage={this.sendMessage}/>
-        </div>
 
 
         </div>
