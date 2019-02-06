@@ -24,6 +24,6 @@ I also decided to include third party OAuth to sign in to the website with a use
 ------------------------------------------------------------------------------------------------------------------------------
 These are personal side projects that I'm currently working on to grow and learn more as a developer.
 ## Shopping Cart
-Current working on a side project where I'm making a "ebay" style shopping cart. The main focus of this project is to learn to implememnt Redux.
+Current working on a side project where I'm making a "ebay" style shopping cart. The main focus of this project is to learn and implememnt Redux.
 ## Smash Bros Info
-A personal project that I'm working on where I'm practicing my CSS skills.
+A personal project that I'm working on where I'm practicing my CSS skills. I also created a chatroom component using the Chatkit API.
