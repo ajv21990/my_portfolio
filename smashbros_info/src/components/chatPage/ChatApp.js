@@ -21,7 +21,8 @@ export default class ChatApp extends React.Component {
             joinedRooms: [],
             roomId: null,
             modalShow: true,
-            modalRegisterShow: false
+            modalRegisterShow: false,
+            username: ""
         }
     }
 
@@ -90,6 +91,18 @@ export default class ChatApp extends React.Component {
             .then(room => this.subscribeToRoom(room.id))
             .catch(err => console.log('error with create room', err))
     }
+    handleChange = e => {
+        this.setState({
+            username: e.target.value
+        })
+    }
+
+    login = () => {
+        this.setState({
+            modalShow: false
+        })
+        console.log(this.state.username)
+    }
 
 
 
@@ -122,11 +135,9 @@ export default class ChatApp extends React.Component {
                             <h2 className="mt-4" style={{ textAlign: "center" }}>Chat Login</h2>
                             <hr />
                             <div className="col-md-6 mx-auto" style={{ width: "400px" }}>
-                                <TextInput label="Email" id="email" type="email" val={this.state.email} handleChange={this.handleChange} />
-                                <TextInput label="Password" id="password" type="password" val={this.state.password} handleChange={this.handleChange} />
+                                <TextInput label="Username" id="userName" type="text" val={this.state.username} handleChange={this.handleChange} />
                                 <div className="row">
-                                    <SubmitButton className="btn btn-primary mt-2 mb-2 ml-3" label="Log In" onClick={this.logIn} />
-                                    <p className="mt-2 ml-3">or <button className="btn btn-link" onClick={this.goToRegister}>Sign up</button> </p>
+                                    <SubmitButton className="btn btn-primary mt-2 mb-2 ml-3" label="Log In" onClick={this.login} />
                                 </div>
                             </div>
                         </div>
@@ -135,27 +146,6 @@ export default class ChatApp extends React.Component {
 
                 </Modal>
 
-                {/* Register Modal */}
-
-                <Modal
-                    open={this.state.modalRegisterShow}
-                >
-                    <div style={{ padding: "250px" }}>
-                        <div className="form-control border rounded mx-auto" style={{ width: "400px", backgroundColor: "white", height: "400px" }}>
-                            <h3 style={{ textAlign: "center" }}>Register</h3>
-                            <hr />
-                            <div className='panel panel-default'>
-                            </div>
-                            <div className="form-group">
-                                <RegisterForm
-                                    state={this.state}
-                                    handleChange={this.handleChange}
-                                    handleClick={this.handleClick}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </Modal>
             </div>
         )
     }
