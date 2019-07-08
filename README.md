@@ -27,3 +27,5 @@ These are personal side projects that I'm currently working on to grow and learn
 Current working on a side project where I'm making a "ebay" style shopping cart. The main focus of this project is to learn and implememnt Redux.
 ## Smash Bros Info
 A personal project that I'm working on where I'm practicing my CSS skills. I also created a chatroom component using the Chatkit API.
+## Roman Calc
+I was inspired recently by the “Convert Roman Numeral to Integer” algorithm problem and wanted to create a UI for it. I wrote all the logic for the problem in JavaScript and took into account the rules for roman numerals. I also created a couple functions that checked the user’s input if it contained anything other than the letters of roman numerals. In the future I plan to add a feature that converts a number into a roman numeral.
