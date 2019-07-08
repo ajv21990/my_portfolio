@@ -1,0 +1,9 @@
+.romanCalc{
+    background-color: rgba(245, 245, 245, 0.5);
+    color:#276090;
+    padding: 50px;
+}
+
+.romanCalcText{
+    font-size: 50px;
+}
