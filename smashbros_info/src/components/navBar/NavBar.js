@@ -10,6 +10,7 @@ const Navbar = () => (
         <div className="dropContent">
             <Link to="/character_select">Character Select</Link>
             <a href="https://github.com/ajv21990/my_portfolio" target="_blank" rel="noopener noreferrer">My Work</a>
+            <Link to="/chat">Chat</Link>
         </div>
     </div>
 )
